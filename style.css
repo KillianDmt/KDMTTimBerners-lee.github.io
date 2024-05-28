@@ -119,7 +119,6 @@ nav li{
 
 main {
     max-width: 100%;
-
     margin-top: 48px;
     padding: 0 40px;
     box-sizing: border-box;
@@ -128,7 +127,8 @@ main {
 }
 
 main p {
- margin: 0;
+    width: 90%;
+    margin: 0;
 }
 
 p.preMenu{
@@ -151,6 +151,43 @@ section h1 {
 /*display on bigger screen*/
 .actions{
     display: none;
+}
+
+span.AKA::before{
+     content: 'Also Known as : ' ;
+}
+
+span.AKA{
+    font-style: italic;
+    font-size: 0.75em;
+    color: gray;
+}
+p.Desktop{
+    display: none;
+}
+
+p.Mobile{
+    display: block;
+    white-space: pre;
+}
+
+p.Mobile a{
+    text-decoration: dotted; /*not working*/
+}
+
+button img {
+    max-height: 20px;
+    color: #020041;
+}
+
+button.Content{
+    width: 85%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #020041;
+    margin : auto;
 }
 
 
@@ -213,46 +250,15 @@ nav li a:hover {
     padding: 15px;*/
 }
 
-.images li:hover{
-    position: relative;
-    top:-4px;
-}
-
-form input:focus{
-    border: 4px dashed #4b4b4b;
-    outline: none;
-}
-
-form input:valid{
-    border: 4px solid #71d300;
-}
 
 nav li:first-child{
     /*border: 3px solid #f63232;*/
 }
 
-article p::first-line{
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-section.join p::first-letter{
-    font-size: 1.5em;
-}
-
-p::selection{
-    background-color: #f63232;
-    color:white;
-}
-
-p::after{
-    content: '...';
-}
-
 /*Responsive styles
 max-width if working computer first
 min-width if working mobile first
-*/
+
 
 @media screen and (max-width:1400px){
     .banner .welcome h2{
@@ -314,3 +320,4 @@ min-width if working mobile first
         top: 0;
     }
 }
+*/
