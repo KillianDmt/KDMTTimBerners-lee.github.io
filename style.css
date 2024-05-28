@@ -11,14 +11,15 @@
 }
 
 body {
-    display: flex;
     width: 100%;
+    column-width: 50%;
+    height: 100vh;
     margin: 0;
     background-color: white;
 }
 
 
-nav{ 
+header nav{ 
     width: 100%;
     background-color: #020041;
     display: flex;
@@ -63,7 +64,13 @@ nav ul li a:hover {
     background-color: #004080
 }
 
+/*
+main {
+    background-color: aqua;
+} */
+
 .section1 nav ul {
+    margin-left: 50px;
     list-style: none;
     padding: 0;
     display: flex;
@@ -78,8 +85,8 @@ nav ul li a:hover {
 
 
 .pre-Nav{
+    padding: 20px 15px;
     list-style-type: none;
-    display: flex;
     margin-bottom: 20px;
 }
 
@@ -139,19 +146,32 @@ button:hover {
     color: white;
 }
 
+.actions {
+    color: #020041;
+    background-color: lightgray;
+
+}
+
+/*Aside Not Working*/
+
 aside{
-    flex: 1;
+    width: 30%;
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-evenly;
+    text-align: center;
     border: 1px solid gray;
-    padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: lightgrey;
+    position : absolute;
+    top : 150px;
 }
 
 aside article section img{
     width: 100%;
     height: auto;
-
+    justify-content: center;
 }
 
 aside section p{
@@ -168,4 +188,11 @@ aside button {
     padding: 5px 10px;
     display: block;
     margin: 0 auto;
+}
+
+article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 30%;
 }
