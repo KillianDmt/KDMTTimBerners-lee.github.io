@@ -13,13 +13,13 @@
 body {
     display: flex;
     width: 100%;
-    line-height: 1.6;
     margin: 0;
     background-color: white;
-    flex-wrap: wrap;
 }
 
+
 nav{ 
+    width: 100%;
     background-color: #020041;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-left: left;/*?*/
+    margin-left: left;
 }
 
 .rightMenu{
@@ -169,4 +169,3 @@ aside button {
     display: block;
     margin: 0 auto;
 }
-/*¨Pre Reset*/
