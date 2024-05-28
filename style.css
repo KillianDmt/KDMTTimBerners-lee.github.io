@@ -1,4 +1,5 @@
-/*Reset*/
+
+/*Header++*/
 
 * {
     margin: 0;
@@ -68,7 +69,7 @@ nav ul li a:hover {
 main {
     background-color: aqua;
 } */
-
+/*Different Nav Tools*/
 .section1 nav ul {
     margin-left: 50px;
     list-style: none;
@@ -98,7 +99,8 @@ main {
     text-decoration: none;
     color: gray;
 }
-/*coded as aside but might be article*/
+
+/*Title of Main++*/
 .section1 h1{
     font-size: 2rem;
     margin-bottom: 10px;
@@ -152,7 +154,11 @@ button:hover {
 
 }
 
-/*Aside Not Working*/
+.subscribe {
+    background-color: orange;
+}
+
+/*Aside Not Working Vertical,...*/
 
 aside{
     width: 30%;
@@ -161,11 +167,12 @@ aside{
     justify-content: space-evenly;
     text-align: center;
     border: 1px solid gray;
-    margin-bottom: 20px;
+    padding-bottom: 100px;
     border-radius: 10px;
-    background-color: lightgrey;
+    background-color: white;
     position : absolute;
     top : 150px;
+    margin-left: 500px;
 }
 
 aside article section img{
@@ -175,21 +182,26 @@ aside article section img{
 }
 
 aside section p{
+    width: 60%;
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
 aside p{
+    width: 60%;
     margin-bottom: 10px;
 }
 
 aside button {
+    width: 60%;
     font-size: 0.8rem;
     padding: 5px 10px;
     display: block;
     margin: 0 auto;
 }
 
+
+/*Article Bottom Left*/
 article {
     display: flex;
     justify-content: flex-start;
