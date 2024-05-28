@@ -12,19 +12,21 @@
 
 body {
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    line-height: 1.6;
-    margin: 20px;
+    width: 100%;
+    margin: 0;
     background-color: white;
 }
 
-nav{
+
+nav{ 
+    width: 100%;
     background-color: #020041;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     height: 50px;
+    top: 0;
+    left: 0;
 }
 
 .menu{
@@ -32,7 +34,7 @@ nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-left: left;/*?*/
+    margin-left: left;
 }
 
 .rightMenu{
@@ -43,6 +45,10 @@ nav{
     margin-left: auto;
 }
 
+nav ul {
+    top:55px;
+}
+
 nav ul li a{
     margin: 0 10px;
     color: white;
@@ -50,6 +56,7 @@ nav ul li a{
     margin-right: 15px;
     padding: 8px 12px;
     border-radius: 10px;
+    justify-content: flex-start;
 }
 
 nav ul li a:hover {
@@ -132,17 +139,6 @@ button:hover {
     color: white;
 }
 
-
-article {
-    flex: 3;
-    margin-right: 0px;
-    text-decoration: none;
-}
-
-article p{
-    justify-content: flex-start;
-}
-
 aside{
     flex: 1;
     border: 1px solid gray;
@@ -173,4 +169,3 @@ aside button {
     display: block;
     margin: 0 auto;
 }
-/*¨Pre Reset*/
