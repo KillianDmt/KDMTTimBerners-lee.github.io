@@ -62,6 +62,11 @@ nav ul li a:hover {
     background-color: #004080
 }
 
+/*
+main {
+    background-color: aqua;
+} */
+
 .section1 nav ul {
     margin-left: 50px;
     list-style: none;
@@ -139,22 +144,32 @@ button:hover {
     color: white;
 }
 
+.actions {
+    color: #020041;
+
+}
+
 aside{
-    flex: 1;
+
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-evenly;
     border: 1px solid gray;
-    padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: lightgrey;
+    position : absolute;
+    top : 150px;
 }
 
 aside article section img{
     width: 100%;
     height: auto;
-
+    justify-content: center;
 }
 
 aside section p{
+    flex-direction: column;
     font-size: 2rem;
     margin-bottom: 15px;
 }
@@ -168,4 +183,11 @@ aside button {
     padding: 5px 10px;
     display: block;
     margin: 0 auto;
+}
+
+article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 30%;
 }
