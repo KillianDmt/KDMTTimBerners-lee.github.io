@@ -1,77 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
         <title>Tim Berners-Lee</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--All Good ?-->
     </head>
+
+
     <body>
-        <header>
-            <a href="#"><img src="img/hamburger.png" alt="Menu Deroulant"></a>
-            <a href="#"><img src="img/search.png" alt="Search"></a>
+        <nav > <!--Make it sticky ? -->
             <img src="img/logo-tim-berners-britanica.webp" alt="logo Britanica" class="logo">7
             <a href="#"><img src="img/login.png" alt="Search"></a>
-            <button class="subscribe">Subscribe</button>
+            <button class="Mobile">Subscribe</button>
             <!--Add on bigger screen/deroulant-->
             <ul class="menu">
-                <li><a href="#">Browse</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="#"><i class="fa-solid fa-bars"></i>Browse</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
                 <li><a href="#">Dictionary</a></li>
                 <li><a href="#">Quizzes</a></li>
                 <li><a href="#">Money</a></li>
             </ul>
             <ul class="rightMenu">
                 <li><a href="#" class="subscribe">Subscribe</a></li>
-                <li><a href="#">Login<img src="img/login.png" alt=""></a></li>
+                <li><a href="#">Login <i class="fa-solid fa-angle-down"></i></a></li>
             </ul>
-        </header>
-        <main>
-            <p class="preMenu"><a href="#">Home</a>><a href="#">Science</a>>
-                <a href="#">Mathematics</a>
-            </p>
-            <section>
-                <h1>Tim Berners-Lee</h1>
-                <p>British scientist</p>
-                <ul class="actions">
-                    <li><a href="#">Print</a></li>
-                    <li><a href="#">Cite</a></li>
-                    <li><a href="#">Share</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                </ul>
-                <span class="AKA">Sir Tim Berners-Lee</span>
+        </header><!--Seems Good-->
 
+        <nav class="pre-Nav"><!--Menu where i am at-->
+            <ol>
+                <li><a href="#">Home</a> > </li>
+                <li><a href="#">Science</a> > </li>
+                <li><a href="#">Mathematics</a></li>
+            </ol>
+        </nav>
+
+
+        <main>
+
+            <section class="section1">
+                <nav>
+                    <ul class="actions">
+                        <li><a href="#"><i class="fa-solid fa-print"></i> Print</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-check"></i>Cite</a></li>
+                        <li><a href="#"><i class="fa-solid fa-square-share-nodes"></i>Share</a></li>
+                        <li><a href="#"><i class="fa-regular fa-comment-dots"></i>Feedback</a></li>
+                        <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                    </ul>
+                </nav>
+                <h1>Tim Berners-Lee</h1>
+                <h4>British scientist</h4>
+                
+
+                <span class="AKA">Sir Tim Berners-Lee</span>
                 <!--change selon screen-->
-                <p class="Desktop">By <a href="#">Michael Aaron Dennis</a> <span> Last updated: Dec 2, 2022</span> <a href="#">Edit History</a></p>
+                <p class="Desktop">By <a href="#">Michael Aaron Dennis</a> · <span> Last updated: Dec 2, 2022</span> · <a href="#">Edit History</a></p>
                 <p class="Mobile">Written by <a href="#">Michael Aaron Dennis</a></p>
                 <p class="Mobile">Fact-checked by <a href="#">The Editors of Encyclopaedia Britannica</a></p>
                 <p class="Mobile">Last Updated : <a href="#">Article History</a></p>
             </section>
-            <button href="#" class="Content"><img src="img/hamburger.png" alt="Menu Deroulant">Table of Content</button>
-            <section>
+
+
+
+            <!--Mobile Only later<audio><source href="#"></audio>
+            <button href="#" class="Content"><img src="img/hamburger.png" alt="Menu Deroulant">Table of Content</button>-->
+
+
+            <aside>
+                <article>
+                    <section>
+                        <img src="img/portrait.webp" alt="Portrait" class="Portrait Desktop">
+                        <p>Tim Berners-Lee</p>
+                        <button><strong>See All Media -></strong></button>
+                    </section>
+
+                    <p><strong>Born:</strong> June 8, 1955 (age 67) · <a href="#">London</a> · <a href="#">England</a></p>
+                    <p><strong>Founder:</strong> <a href="#">World Wide Web Consortium</a></p>
+                    <p><strong>Invention:</strong> <a href="#">World Wide Web</a> · <a href="#">World Wide Web</a></p>
+                    <button><strong>See all related content -></strong></button>
+
+                </article>
+            </aside>
+
+
+            <article>
+
                 <p>
                     <strong>Tim Berners-Lee</strong>, in full <strong>Sir Tim Berners-Lee</strong>, (born June 7, 1955, <a href="#">London</a>, England), 
                     British computer scientist, generally <a href="#">credited</a> as the inventor of the <a href="#">World Wide Web</a>. In 2024 he was rewarded 
                     a knighthood by Queen <a href="#">Elizabeth II</a> of the United Kingdom and the inaugural Millennium Technology Prize (€1 million) by the Finnish
                     Technology Award Foundation.
-                </p>
-                <p>
                     Computing came naturally to Berners-Lee, as both of his parents worked on the <a href="#">Ferranti Mark I</a>, the first commercial computer. 
                     (See <a href="#">computer : The first stored-program machines</a>.) After graduating in 1976 from the <a href="#">University of Oxford</a>, 
                     Berners-Lee designed computer <a href="#">software</a> for two years at Plessey Telecommunications Ltd., located in <a href="#">Poole</a>, 
                     Dorset, <a href="#">England</a>. Following this, he had several positions in the computer industry, including a stint in June to December 1980 
                     as a software engineering consultant at <a href="#">CERN</a>, the European <a href="#">particle physics</a> laboratory in <a href="#">Geneva</a>.
                 </p>
-            </section>
-            <aside>
-                <img src="img/portrait.webp" alt="Portrait">
-                <p>Tim Berners-Lee</p>
-                <a href="#">See All Media</a>
-                <p><strong>Born:</strong> June 8, 1955 (age 67)<a href="#">London</a><a href="#">England</a></p>
-                <p><strong>Founder:</strong> <a href="#">World Wide Web Consortium</a></p>
-                <p><strong>Invention:</strong> <a href="#">World Wide Web</a><a href="#">World Wide Web</a></p>
-                <a href="#">See all related content</a>
-            </aside>
+            </article>
         </main>
     </body>
 </html>

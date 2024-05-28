@@ -1,323 +1,176 @@
-/*{
-    static = no movement
-    relative = move relative to another object,.. 
-    fixed = fixed relative to viewport. used for nav
-    absolute = relative(linked) to a parent 
-    taking it out of classic document flow
-    sticky = static at start and fixed while scroll,...
-}*/
+/*Reset*/
 
-body, ul, li, p, a{
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial;
-}
-
-/*header {
-    background-color: #020041;
-    padding: 20px;
-    text-align: center;
-    position : fixed;/*default static value
-    width : 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    
-}
-
-header h1{
-    color: white;
-    border: 8px solid white;
-    padding : 6px 12px;
-    display : inline-block;
-    border-radius: 36px;
-}
-
-.banner {
-    position: relative;
-}
-
-.banner img{
-    max-width: 100%;
-}
-
-.banner .welcome{
-    background-color: #feb614;
-    position:absolute;
-    left: 0;
-    top: 30%;
-    color: white;
-    padding : 30px;
-}
-
-.banner h2{
-    font-size: 74px;
-}
-
-.banner span {
-    font-size: 1.3em;
-}*/
-
-header{
-    padding: 20px;
-    margin: 10px;
-    background-color: #020041;
-    height: 45px;
-   /* position : fixed;/*default static value*/
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-}
-
-
-header ul.menu{
-    display: none;
-}
-
-/*logo center*/
-header.logo {
-    flex-basis: 80%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-}
-
-header ul.rightMenu{
-    display: none;
-}
-
-header img {
-    top: 0;
-    max-height: 35px;
-    z-index: 1;
-}
-
-header button{
-    background-color: #d1550d;
-    color: white;
-    border-radius: 16px;
-}
-/*
-header ul {
-    align-items: center;
-    position: absolute;
-    white-space: nowrap;
-    max-width: 1200px;
-    margin 0 auto;
-    top: 0;
-    left: 0;
-}
-nav li{
-    width: 25%;
-    display: nones;
-    font-size: 24px;
-}*/
-
-
-main {
-    max-width: 100%;
-    margin-top: 48px;
-    padding: 0 40px;
     box-sizing: border-box;
-    /*include padding on box*/
-    left: 0;
 }
 
-main p {
-    width: 90%;
+.logo {
+    width: 150px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: white;
+}
+
+nav{
+    background-color: #020041;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    margin-left: left;/*?*/
 }
 
-p.preMenu{
-    color: grey;
-    margin: 10px;
-    font-size: 0.75em;
+.rightMenu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
 }
 
-p.preMenu a{
+nav ul li a{
+    margin: 0 10px;
+    color: white;
     text-decoration: none;
-    color: grey;
-    margin: 10px;
-    font-size: 0.9em;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
-section h1 {
+nav ul li a:hover {
+    background-color: #004080
+}
+
+.section1 nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid white;
+    margin-bottom: 0px;
+}
+
+.section1 nav ul li {
+    margin: 0 4px;
+}
+
+
+.pre-Nav{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.pre-Nav li{
+    margin-right: 10px;
+}
+
+.pre-Nav li a{
+    text-decoration: none;
+    color: gray;
+}
+/*coded as aside but might be article*/
+.section1 h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section1 h4{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.Mobile{
+    display: none;
+}
+
+.AKA, .Desktop{
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.Desktop{
+    text-decoration: dotted;
+}
+
+.AKA::before{
+    content: 'Alternate Titles:';
+}
+
+/*Trouver solution pour button*/
+
+button {
+    display: inline-block;
+    padding: 0px 12px;
+    margin-right: 1px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #1711b4;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #005f8d;
+    color: white;
+}
+
+
+article {
+    flex: 3;
+    margin-right: 0px;
+    text-decoration: none;
+}
+
+article p{
+    justify-content: flex-start;
+}
+
+aside{
+    flex: 1;
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+aside article section img{
+    width: 100%;
+    height: auto;
+
+}
+
+aside section p{
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
-/*display on bigger screen*/
-.actions{
-    display: none;
+aside p{
+    margin-bottom: 10px;
 }
 
-span.AKA::before{
-     content: 'Also Known as : ' ;
-}
-
-span.AKA{
-    font-style: italic;
-    font-size: 0.75em;
-    color: gray;
-}
-p.Desktop{
-    display: none;
-}
-
-p.Mobile{
+aside button {
+    font-size: 0.8rem;
+    padding: 5px 10px;
     display: block;
-    white-space: pre;
+    margin: 0 auto;
 }
-
-p.Mobile a{
-    text-decoration: dotted; /*not working*/
-}
-
-button img {
-    max-height: 20px;
-    color: #020041;
-}
-
-button.Content{
-    width: 85%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #020041;
-    margin : auto;
-}
-
-
-
-
-/* Mario Base
-article p{
-    line-height: 2em;
-    color: #4b4b4b;
-}
-
-.images{
-    text-align: center;
-    margin: 80px 0;
-    white-space: nowrap;
-    *solve inline block br*
-}
-
-.images li{
-    display: inline-block;
-    width: 40%;
-    margin: 20px 5%;
-}
-
-.images li img{
-    max-width: 100%;
-}
-
-section.join{
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 60px 20px;
-    color: #4b4b4b;
-}
-
-.join h2{
-    font-size: 36px;
-}
-
-form input{
-    margin: 20px 0;
-    padding: 10px 20px;
-    font-size: 24px;
-    border-radius: 28px;
-    border: 4px solid white;
-}
-
-footer {
-    background-color: #f63232;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}*/
-
-/*Pseudo Classes*/
-
-nav li a:hover {
-    text-decoration: underline;
-    /*background-color:pink;
-    padding: 15px;*/
-}
-
-
-nav li:first-child{
-    /*border: 3px solid #f63232;*/
-}
-
-/*Responsive styles
-max-width if working computer first
-min-width if working mobile first
-
-
-@media screen and (max-width:1400px){
-    .banner .welcome h2{
-       font-size : 50px;
-    }
-
-    nav li {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width:960px){
-    .banner .welcome h2{
-       font-size : 40px;
-    }
-}
-
-@media screen and (max-width:1400px){
-    .banner .welcome{
-       position: relative;
-       padding: 10px;
-    }
-
-    .banner .welcome h2{
-        font-size: 25px;
-    }
-
-    .banner .welcome br {
-        display: none;
-    }
-
-    .banner .welcome span{
-        font-size: 1em;
-    }
-
-    .images li{
-        width: 100%;
-        margin: 20px auto;
-        display: block;
-    }
-}
-
-@media screen  and (max-width:560px){
-    
-    nav li{
-        font-size: 20px;
-        position: relative ;
-        display: block ;
-        width: 100%;
-        margin: 12px 0;
-
-    }
-
-    header{
-        position: relative;
-    }
-
-    nav{
-        top: 0;
-    }
-}
-*/
+/*¨Pre Reset*/
