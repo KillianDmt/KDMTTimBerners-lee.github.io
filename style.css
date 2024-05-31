@@ -1,5 +1,5 @@
 
-/*Header++
+Header++
 
 * {
     margin: 0;
@@ -8,44 +8,16 @@
 }
 
 .logo {
-    width: 150px;
-}
-
-body {
-    width: 100%;
-    column-width: 50%;
-    height: 100vh;
-    margin: 0;
-    background-color: white;
+    width: 10%;
+    height: auto;
 }
 
 
-header nav{ 
-    width: 100%;
-    background-color: #020041;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    height: 50px;
-    top: 0;
-    left: 0;
-}
+/*
 
-.menu{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: left;
-}
 
-.rightMenu{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-}
+
+
 
 nav ul {
     top:55px;
@@ -65,10 +37,7 @@ nav ul li a:hover {
     background-color: #004080
 }
 
-/*
-main {
-    background-color: aqua;
-} */
+
 /*Different Nav Tools
 .section1 nav ul {
     margin-left: 50px;
@@ -85,11 +54,7 @@ main {
 }
 
 
-.pre-Nav{
-    padding: 20px 15px;
-    list-style-type: none;
-    margin-bottom: 20px;
-}
+
 
 .pre-Nav li{
     margin-right: 10px;
@@ -209,5 +174,106 @@ article {
     align-items: flex-end;
     width: 30%;
 } */ 
+
+/*Hide Mobile Stuff*/
+
+.Mobile{
+    display: none;
+}
+
+body {
+    width: 100%;
+    column-width: 50%;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(199, 190, 190);
+}
+
+
+/*Header*/
+
+header  nav{
+    max-width: 100%;
+    background-color: #020041;
+    position: sticky;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+header ul li a{
+    text-decoration: none;
+    margin: 10px 10px;
+    color: inherit;
+}
+
+.menu{
+    margin-left: left;
+}
+
+.rightMenu{
+    display: flex;
+    left: 0;
+    margin-left: auto;
+}
+
+
+/*Main*/
+
+.pre-Nav{
+    margin-left: 20px;
+    padding: 20px 15px;
+    list-style-type: none;
+    margin-bottom: 5px;
+    word-spacing: 15px;
+}
+
+main{
+    background-color: white;
+    border: 3px solid #cecece;
+    width: 780px;
+    height: 100vh;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 40% 60%;
+}
+
+aside{
+    border: 3px solid #cecece;
+    padding: 20px;
+}
+
+aside img{
+    max-width: 100%;
+}
+
+main .section1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+main article{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+main aside{
+    grid-row: 1;
+    grid-column: 2;
+} 
+
 
 
